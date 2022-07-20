@@ -84,14 +84,12 @@ target_link_libraries(cppgpio-static Threads::Threads)
 target_include_directories(cppgpio
 	PUBLIC
 	$<INSTALL_INTERFACE:include>
-	PRIVATE
 	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
 )
 
 target_include_directories(cppgpio-static
 	PUBLIC
 	$<INSTALL_INTERFACE:include>
-	PRIVATE
 	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
 )
 
